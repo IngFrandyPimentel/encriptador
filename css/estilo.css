@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --colorPrimario:#0A3871;
+}
+body{
+    background: #E5E5E5;
+}
+
+.contenido{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    
+    height: 720px;
+}
+#logo{
+   
+    position: absolute;
+    left: 13.67%;
+    right: 37.43%;
+    top: 40px;
+    bottom: 0%;
+    color: var(--colorPrimario);
+    font-size: 500px;
+
+}
+
+.cajaTexto{
+   
+    position: relative;
+    left: 5%;
+    width: 52%;
+    margin: 40px;
+    height: 500px;
+    top: 25px;
+   
+    
+
+}
+.cajaTexto2{
+    position: relative;
+    width: 30%;
+    height: 550px;
+    left: 50px;
+    top: 25px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    background-color: white;
+    border-radius: 32px;
+    padding: 60px 20px;
+    
+}
+textarea{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: var(--colorPrimario);
+    border: none;
+    resize: none;
+    padding: 10px;
+    outline: none;
+    background-color: transparent;
+    max-width: 350px;
+    max-height: 400px;
+}
+::placeholder{
+    color: var(--colorPrimario);
+}
+#munheco{
+    width: 350px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+
+}
+#munheco h2{
+    width: 336px;
+    height: 58px;
+    margin-top: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #343A40;
+   
+}
+#munheco p{
+    color: #495057;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 400px;
+    margin-top: 20px;
+}
+
+#btnCopiar{
+    padding: 24px;
+    position: relative;
+    width: 336px;
+    height: 67px;
+    left: 40px;
+    top: 60px;
+}
+.exclamacion{
+    width: 550px;
+    height: 18px;
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    top: 570px;
+    left: 250px;
+    color: #495057;
+    opacity: 0.8;
+
+}
+.exclamacion img{
+    position: absolute;
+    display: inline-block;
+    
+
+    
+}
+.exclamacion p{
+    position: absolute;
+    display: inline-block;
+    left: 20px;
+}
+
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 600px;
+ 
+}
+
+.btn{
+    
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    cursor: pointer;
+    border: 1px solid var(--colorPrimario);
+}
+
+#btn1{
+    background: var(--colorPrimario);
+    color: white;
+
+}
+#btn2{
+    background: #D8DFE8;
+
+}
+#btnCopiar{
+    background: white;
+
+}
+@media screen and (max-width: 768px) {
+    .contenido{
+        flex: none;
+        margin: 20px auto;
+        display: block;
+        width: max-content;
+    }
+    .exclamacion{
+        left: 15%;
+
+    }
+    .cajaTexto{
+        top: 60px;
+        width: 80%;
+    }
+    .cajaTexto2{
+        height: 80px;
+        max-height: 400px;
+        top: 80px;
+        width: 80%;
+        margin-bottom: 140px;
+    }
+    #imagen{
+        display: none;
+    }
+    .botones{
+        flex: none;
+        position: relative;
+        top: 50px;
+        left: auto;
+    }
+    h2{
+        position: absolute;
+        top: 25px;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    #logo{
+       left: 5%;
+       height: 50px;
+    }
+    .contenido{
+        
+        width:440px;
+        height: 995px;
+        position: relative;
+        margin: 0;
+ 
+        
+    }
+    .exclamacion{
+        left: 5%;
+        top: 115px;
+       position: relative;
+       width:230px;
+       
+
+    }
+    .cajaTexto{
+        top: 120px;
+        width: 90%;
+        left: 5%;
+        position: relative;
+        flex: none;
+        margin: 0;
+    }
+    .cajaTexto2{
+        width: 80%;
+        top: 250px;
+        left: 5%;
+       height: 30px;
+       max-height: 400px;
+       margin-bottom: 20px;
+    }
+    #imagen{
+        display:none !important;
+    }
+    .botones{
+        flex: none;
+        position: relative;
+        top: 125px;
+        width: 90%;
+        display: block;
+        
+       
+    }
+    .btn{
+        flex: none;
+        display: block;
+        position: relative;
+        width: 100%;
+        margin: 15px;
+    }
+   #munheco{
+    flex: none;
+    font-size:1rem;
+    padding: 0px;
+       
+    }
+    h2{
+       position: absolute;
+       top: 20px;
+    
+    }
+    p{
+        position: absolute;
+        margin-top: 10px;
+    }
+}
